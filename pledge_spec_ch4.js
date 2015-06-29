@@ -142,7 +142,7 @@ describe('For a given promiseA (pA)', function(){
   });
 
   // Another demonstration. This should work if the previous specs passed.
-  xit('.then can be chained many times', function(){
+  it('.then can be chained many times', function(){
     var add1 = function (num) { return ++num; };
     var test = 0;
     promiseA.then( add1 ).then( add1 ).then().then( function (data) {
